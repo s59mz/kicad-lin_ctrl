@@ -1,0 +1,31 @@
+### Footprint positions - created on pon 24 apr 2023 16:21:12 ###
+### Printed by KiCad version 7.0.2-6a45011f42~172~ubuntu20.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                 Package                                                             PosX       PosY       Rot  Side
+A1        Arduino_Nano_Every  Arduino_Nano                                                     44.1050    53.1150    0.0000  top
+C12       10u                 CP_Radial_D4.0mm_P2.00mm                                        146.9650    18.1900    0.0000  top
+C15       1000u               CP_Radial_D8.0mm_P5.00mm                                        131.6615    39.9602  -90.0000  top
+C35       10u                 CP_Radial_D4.0mm_P2.00mm                                        132.6976    88.6750  180.0000  top
+C44       10u                 CP_Radial_D4.0mm_P2.00mm                                        132.6976    18.1900  180.0000  top
+C46       1000u               CP_Radial_D8.0mm_P5.00mm                                         73.2415    35.1548   90.0000  top
+FID1      Fiducial            Fiducial_1mm_Mask2mm                                             10.0000   105.0000    0.0000  top
+FID2      Fiducial            Fiducial_1mm_Mask2mm                                            173.0000     5.0000    0.0000  top
+J3        12V-IN              TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal   137.4350     7.7250    0.0000  top
+J5        Input               Conn_2x1                                                        167.5000    73.0000    0.0000  top
+J10       XT90-M              XT90M                                                           116.2050    88.4100   90.0000  top
+J11       XT90-F              XT90M                                                            87.6300    88.4100   90.0000  top
+P1        ANTENNA             IDC-Header_2x04_P2.54mm_Vertical                                 10.0000    47.8100    0.0000  top
+P2        COUPLER             IDC-Header_2x03_P2.54mm_Vertical                                173.0000    86.7300  180.0000  top
+P3        LPF                 IDC-Header_2x04_P2.54mm_Vertical                                 10.0000    69.8100    0.0000  top
+P4        FAN                 IDC-Header_2x04_P2.54mm_Vertical                                 10.0000    91.8100    0.0000  top
+P5        CAT                 IDC-Header_2x04_P2.54mm_Vertical                                 10.0000    25.8100    0.0000  top
+P6        POWER_UNIT          IDC-Header_2x04_P2.54mm_Vertical                                173.0000    51.1900  180.0000  top
+P7        DISPLAY             PinHeader_1x04_P2.54mm_Vertical                                 173.0000    25.8100    0.0000  top
+R6        51                  R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal               26.5100    84.1900    0.0000  top
+RV1       10k                 Potentiometer_Bourns_3296X_Horizontal                           157.6000    97.9350  -90.0000  top
+RV2       10k                 Potentiometer_Bourns_3296X_Horizontal                           142.3600    97.9350  -90.0000  top
+RV3       1k                  Potentiometer_Bourns_3296X_Horizontal                            36.8300    97.9350  -90.0000  top
+RV4       10k                 Potentiometer_Bourns_3296X_Horizontal                            52.0700    97.9350  -90.0000  top
+U1        LM2596              LM2596                                                          102.5150    37.2400  180.0000  top
+## End

@@ -1,0 +1,216 @@
+
+(rules PCB linear_controller
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 13757)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 430.0)
+    (clear 200.2)
+    (clear 215.0 (type smd_to_turn_gap))
+    (clear 470.2 (type default_50V))
+    (clear 50.0 (type smd_smd))
+    (clear 470.2 (type smd_50V))
+    (clear 470.2 (type "kicad_default"_50V))
+    (clear 470.2 (type 12V_50V))
+    (clear 470.2 (type 50V_50V))
+    (clear 470.2 (type 50V_5V))
+    (clear 470.2 (type 50V_gnd))
+  )
+  (padstack "Via[0-1]_1000:500_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2000:800_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1600:500_um"
+    (shape
+      (circle F.Cu 1600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1000:500_um" "Via[0-1]_1000:500_um" default
+  )
+  (via 
+    "Via[0-1]_2000:800_um" "Via[0-1]_2000:800_um" default
+  )
+  (via 
+    "Via[0-1]_1600:500_um" "Via[0-1]_1600:500_um" default
+  )
+  (via 
+    "Via[0-1]_1000:500_um-kicad_default" "Via[0-1]_1000:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2000:800_um-kicad_default" "Via[0-1]_2000:800_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1600:500_um-kicad_default" "Via[0-1]_1600:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1000:500_um-12V" "Via[0-1]_1000:500_um" 12V
+  )
+  (via 
+    "Via[0-1]_2000:800_um-12V" "Via[0-1]_2000:800_um" 12V
+  )
+  (via 
+    "Via[0-1]_1600:500_um-12V" "Via[0-1]_1600:500_um" 12V
+  )
+  (via 
+    "Via[0-1]_1000:500_um-50V" "Via[0-1]_1000:500_um" 50V
+  )
+  (via 
+    "Via[0-1]_2000:800_um-50V" "Via[0-1]_2000:800_um" 50V
+  )
+  (via 
+    "Via[0-1]_1600:500_um-50V" "Via[0-1]_1600:500_um" 50V
+  )
+  (via 
+    "Via[0-1]_1000:500_um-5V" "Via[0-1]_1000:500_um" 5V
+  )
+  (via 
+    "Via[0-1]_2000:800_um-5V" "Via[0-1]_2000:800_um" 5V
+  )
+  (via 
+    "Via[0-1]_1600:500_um-5V" "Via[0-1]_1600:500_um" 5V
+  )
+  (via 
+    "Via[0-1]_1000:500_um-gnd" "Via[0-1]_1000:500_um" gnd
+  )
+  (via 
+    "Via[0-1]_2000:800_um-gnd" "Via[0-1]_2000:800_um" gnd
+  )
+  (via 
+    "Via[0-1]_1600:500_um-gnd" "Via[0-1]_1600:500_um" gnd
+  )
+  (via_rule
+    default "Via[0-1]_1000:500_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1000:500_um-kicad_default"
+  )
+  (via_rule
+    12V "Via[0-1]_2000:800_um-12V"
+  )
+  (via_rule
+    50V "Via[0-1]_1000:500_um-50V"
+  )
+  (via_rule
+    5V "Via[0-1]_1600:500_um-5V"
+  )
+  (via_rule
+    gnd "Via[0-1]_1000:500_um-gnd"
+  )
+  (class default
+    /yellow /blue "unconnected-(A1-Pad3)" /ds18b20 "/fan_a" "/ant_2_a" /count "/ant_3_a"
+    "/Yaesu_A" "/Yaesu_B" "/Yaesu_C" "/Yaesu_D" /bandsel2 /bandsel1 /bandsel0 "unconnected-(A1-Pad17)"
+    "unconnected-(A1-Pad18)" "/vfd_a" "/ref_a" "/i_sense" "/u_sense" "/ptt_out_a" "/pwr_on_a" "/icom_a"
+    "/ptt_a" "unconnected-(A1-Pad28)" /Icom "/rf_in" "Net-(C9-Pad2)" /fan /ptt "Net-(C23-Pad1)"
+    "Net-(C24-Pad1)" "Net-(C25-Pad1)" "Net-(C26-Pad1)" "Net-(C27-Pad1)" "Net-(C30-Pad1)" /bias "/pwr_on" "Net-(D4-Pad2)"
+    "Net-(D5-Pad2)" "unconnected-(J1-Pad4)" "/ptt_out" "/ant_3" "/ant_2" /alc /160m /80m
+    /40m /20m /15m /10m /6m /ref /vfd "Net-(R5-Pad2)"
+    "Net-(RV2-Pad2)" "Net-(U3-Pad2)" "Net-(U3-Pad4)" "unconnected-(U3-Pad5)" "unconnected-(U3-Pad6)" "unconnected-(U3-Pad8)" "unconnected-(U3-Pad9)" "unconnected-(U3-Pad10)"
+    "unconnected-(U3-Pad11)" "unconnected-(U3-Pad12)" "unconnected-(U3-Pad13)" "unconnected-(U5-Pad7)" "Net-(U5-Pad9)" "Net-(U5-Pad10)" "Net-(U5-Pad11)" "Net-(U5-Pad12)"
+    "Net-(U5-Pad13)" "Net-(U5-Pad14)" "Net-(U5-Pad15)" "unconnected-(U6-Pad1)" "unconnected-(U6-Pad2)" "unconnected-(U6-Pad3)" "unconnected-(U6-Pad4)" "unconnected-(U6-Pad5)"
+    "unconnected-(U6-Pad6)" "unconnected-(U6-Pad9)" "unconnected-(U6-Pad10)" "unconnected-(U6-Pad13)" "unconnected-(U6-Pad14)" "unconnected-(U6-Pad15)" "unconnected-(U9-Pad5)" "unconnected-(U9-Pad6)"
+    "unconnected-(U9-Pad7)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 430.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 430.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 12V
+    +12V
+    (clearance_class 12V)
+    (via_rule 12V)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 50V
+    "/50v_in" "/50v_out"
+    (clearance_class 50V)
+    (via_rule 50V)
+    (rule
+      (width 780.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 5V
+    +5VA +5V +5VL
+    (clearance_class 5V)
+    (via_rule 5V)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class gnd
+    GND
+    (clearance_class gnd)
+    (via_rule gnd)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
